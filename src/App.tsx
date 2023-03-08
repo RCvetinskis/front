@@ -1,26 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import styles from "../src/styles/styles.module.css";
+import SearchMovie from "./components/SearchMovie";
+import MovieSearchList from "./components/MovieSearchList";
 
-function App() {
+// create serverside which creates users and user can add his movie to favorite list, in frontside when user logins by id find all the movies user has liked. Finish creating movie card, implement search , pagination, filter, create login logout pages.
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.test}>
+      <SearchMovie />
+      <MovieSearchList />
     </div>
   );
-}
+};
 
 export default App;
